@@ -5,6 +5,8 @@ int main()  {
 
   int Bispo=0;//Nessa linha é declarada a variavel Bispo.
   int Torre=0;//Nessa linha é declarada a variavel Torre.
+  int Cavalo;//Nessa linha é declarada a variavel Cavalo.
+  int movimentocompleto=1;//Nessa linha é declarada uma variavel para armazenar o movimento do cavalo.
  
   //Abaixo é feito o código de movimento da Rainha, usando for. 
 
@@ -34,5 +36,18 @@ int main()  {
     Torre++;//Nessa linha é incrementado 1 a variavel Torre.
    }
    
+   //Abaixo é feito o código de movimenotos do Cavalo, usando While e For, em uma estrutura aninhada.
+
+   while( movimentocompleto == 1)//Nessa linha se a variavel for igual a 1, ela vai ser verdadeira e executará o que tiver dentro dela.
+   {
+    printf("Movimentos do Cavalo em execução\n");//Mensagem usada para melhorar a visualização dos movimenots do Cavalo.
+    for(Cavalo=1; Cavalo <= 2; Cavalo++)//Nessa linha tem uma inicialização, uma codição e um incremento.
+    {
+      printf("Cima\n");//Se a função for acima for verdadeira , esse printf será exibido duas vezes.
+    }
+    printf("Direita\n");//Se a função While for verdadeira, esse printf será exibido uma vez. 
+    movimentocompleto++;//Incremento para que a função While possa executar apenas uma vez.
+   }
+    
     return 0;//Finalizou com sucesso.
 }  
